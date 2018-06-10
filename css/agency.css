@@ -119,7 +119,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: #74b9ff;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
