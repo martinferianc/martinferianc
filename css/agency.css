@@ -84,6 +84,17 @@ section h3.section-subheading {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+.btn-cyan:active, .btn-cyan:focus, .btn-cyan:hover {
+  background-color: #00b894 !important;
+  border-color: #00b894 !important;
+  color: white;
+}
+
+.btn-cyan:active, .btn-cyan:focus {
+  box-shadow: 0 0 0 0.2rem rrgba(0, 184, 148,1.0) !important;
+}
+
+
 ::-moz-selection {
   background: #74b9ff;
   text-shadow: none;
@@ -119,7 +130,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: #74b9ff;
-  font-family: 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
