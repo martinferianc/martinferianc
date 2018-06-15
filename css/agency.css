@@ -84,13 +84,13 @@ section h3.section-subheading {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
-.btn-cyan:active, .btn-cyan:focus, .btn-cyan:hover {
-  background-color: #00b894 !important;
-  border-color: #00b894 !important;
+.btn-white:active, .btn-white:focus, .btn-white:hover {
+  background-color: #dfe6e9 !important;
+  border-color: #dfe6e9 !important;
   color: white;
 }
 
-.btn-cyan:active, .btn-cyan:focus {
+.btn-white:active, .btn-white:focus {
   box-shadow: 0 0 0 0.2rem rrgba(0, 184, 148,1.0) !important;
 }
 
