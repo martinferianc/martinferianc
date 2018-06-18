@@ -46,5 +46,6 @@
   $('.portfolio-modal').on('hidden.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
   })
+  
 
 })(jQuery); // End of use strict

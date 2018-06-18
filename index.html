@@ -15,6 +15,11 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Favicon -->
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -106,8 +111,80 @@
                     <p class="text-muted">Yeah, again, you are reading machine learning. But a different kind, than just recognising cats and dogs. Think bigger, how about self-assembling neural networks? *wink, wink*</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-12 text-center" style="margin-top:20px;">
+                    <h3 class="section-heading text-uppercase">Skills</h3>
+                    <h5 class="text-muted" style="margin:20px;">Technical</h5>
+
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title" style="background: #d35400;"><span>Electronics</span></div>
+                        <div class="skillbar-bar" style="background: #e67e22;"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="90%">
+                        <div class="skillbar-title" style="background: #2980b9;"><span>Java/Python</span></div>
+                        <div class="skillbar-bar" style="background: #3498db;"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #2c3e50;"><span>C++/C</span></div>
+                        <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #46465e;"><span>FPGAs</span></div>
+                        <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div>
+                    <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #333333;"><span>Embedded Systems</span></div>
+                        <div class="skillbar-bar" style="background: #525252;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title" style="background: #27ae60;"><span>Assembly</span></div>
+                        <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                        <div class="skill-bar-percent">60%</div>
+                    </div>
+                    <!-- End Skill Bar -->
+
+                    <h5 class="text-muted" style="margin:20px;">Languages</h5>
+
+                    <div class="skillbar clearfix " data-percent="100%">
+                        <div class="skillbar-title" style="background: #c0392b;"><span>Slovak</span></div>
+                        <div class="skillbar-bar" style="background:  #e74c3c;"></div>
+                        <div class="skill-bar-percent">100%</div>
+                    </div>
+                    <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="90%">
+                        <div class="skillbar-title" style="background: #f39c12;"><span>English</span></div>
+                        <div class="skillbar-bar" style="background: #f1c40f;"></div>
+                        <div class="skill-bar-percent">90%</div>
+                    </div>
+                    <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title" style="background: #8e44ad;"><span>German</span></div>
+                        <div class="skillbar-bar" style="background: #9b59b6;"></div>
+                        <div class="skill-bar-percent">60%</div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
+
 
     <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
@@ -645,6 +722,13 @@
     <!-- Animations init-->
     <script>
         new WOW().init();
+        jQuery(document).ready(function() {
+            jQuery('.skillbar').each(function() {
+                jQuery(this).find('.skillbar-bar').animate({
+                    width: jQuery(this).attr('data-percent')
+                }, 6000);
+            });
+        });
     </script>
 
 </body>
