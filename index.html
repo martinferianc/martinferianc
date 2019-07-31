@@ -59,7 +59,7 @@
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
@@ -265,7 +265,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Projects of the past and present.</h3>
+                    <h3 class="section-subheading text-muted">Projects</h3>
+                    <h4 class="section-subsubheading text-muted">Projects of the past and present.</h4>
                 </div>
             </div>
             <div class="row">
@@ -382,6 +383,28 @@
                     </div>
                 </div>
             </div>
+            <div class="row" id="publications">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-subheading text-muted">Publications</h3>
+                    <h4 class="section-subsubheading text-muted">Publications reflecting my interests.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item wow animated fadeIn" data-wow-delay="0.1s">
+                    <a class="portfolio-link" data-toggle="modal" href="#publicationModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/09-thumbnail.png" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>A Real-Time Object Detection Accelerator with Compressed SSDLite on FPGA</h4>
+                        <p class="text-muted">2018 International Conference on Field-Programmable Technology (FPT)</p>
+                        <p class="text-muted">Hongxiang Fan, Shuanglong Liu, <b>Martin Ferianc</b>, Ho-Cheung Ng, Zhiqiang Que, Shen Liu, Xinyu Niu, Wayne Luk</p>
+                    </div>
+                </div>
         </div>
     </section>
 
@@ -524,24 +547,30 @@
                 <div class="col-md-4">
                     <span class="copyright">Copyright &copy; Martin Ferianc 2018-present</span>
                 </div>
+
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item wow animated rollIn" data-wow-delay="0.2s">
+                      <li class="list-inline-item wow animated rollIn" data-wow-delay="0.2s">
+                          <a target="_blank" href="https://scholar.google.com/citations?user=itcRKZQAAAAJ&hl=en">
+                <i class="fas fa-graduation-cap"></i>
+              </a>
+                      </li>
+                        <li class="list-inline-item wow animated rollIn" data-wow-delay="0.3s">
                             <a target="_blank" href="https://www.facebook.com/martin.ferianc">
                   <i class="fab fa-facebook"></i>
                 </a>
                         </li>
-                        <li class="list-inline-item wow animated rollIn" data-wow-delay="0.3s">
+                        <li class="list-inline-item wow animated rollIn" data-wow-delay="0.4s">
                             <a target="_blank" href="https://www.linkedin.com/in/feriancmartin/">
                   <i class="fab fa-linkedin"></i>
                 </a>
                         </li>
-                        <li class="list-inline-item wow animated rollIn" data-wow-delay="0.4s">
+                        <li class="list-inline-item wow animated rollIn" data-wow-delay="0.5s">
                             <a target="_blank" href="https://www.github.com/martinferianc">
                   <i class="fab fa-github"></i>
                 </a>
                         </li>
-                        <li class="list-inline-item wow animated rollIn" data-wow-delay="0.5s">
+                        <li class="list-inline-item wow animated rollIn" data-wow-delay="0.6s">
                             <a target="_blank" href="https://www.instagram.com/martinferianc/?hl=en">
                   <i class="fab fa-instagram"></i>
                 </a>
@@ -883,6 +912,40 @@
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="publicationModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">A Real-Time Object Detection Accelerator with Compressed SSDLite on FPGA</h2>
+                                <p class="item-intro text-muted">2018 International Conference on Field-Programmable Technology (FPT)</p>
+                                <p class="item-intro text-muted">H Fan, S Liu, <b>M Ferianc</b>, HC Ng, Z Que, S Liu, X Niu, W Luk</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full.png" alt="">
+                                <p>Convolutional neural network (CNN)-based object detection has been widely employed in various applications such as autonomous driving and intelligent video surveillance. However, the computational complexity of conventional convolution hinders its application in embedded systems. Recently, a mobile-friendly CNN model SSDLite-MobileNetV2 (SSDLiteM2) has been proposed for object detection. This model consists of a novel layer called bottleneck residual block (BRB). Although SSDLiteM2 contains far fewer parameters and computations than conventional CNN models, its performance on embedded devices still cannot meet the requirements of real-time processing. This paper proposes a novel FPGA-based architecture for SSDLiteM2 in combination with hardware optimizations including fused BRB, processing element (PE) sharing and load-balanced channel pruning. Moreover, a novel quantization scheme called partial quantization has been developed, which partially quantizes SSDLiteM2 to 8 bits with only 1.8% accuracy loss. Experiments show that the proposed design on a Xilinx ZC706 device can achieve up to 65 frames per second with 20.3 mean average precision on the COCO dataset.</p>
+                                <a class="btn btn-secondary" href="https://ieeexplore.ieee.org/document/8742299", target="_blank">
+                                  Link to Paper</a>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Close Project</button>
                             </div>
                         </div>
                     </div>
