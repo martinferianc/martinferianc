@@ -434,6 +434,21 @@
                         <p class="text-muted">FPGAs, C++, Machine Learning, Python</p>
                     </div>
                 </div>
+                <div class="col-md-4 col-sm-6 portfolio-item wow animated fadeIn" data-wow-delay="0.2s">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/100-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Drug consumption prediction for NHS</h4>
+                        <p class="text-muted">Bayesian recurrent neural network, Data analysis, Machine Learning, Python
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="row" id="publications">
                 <div class="col-lg-12 text-center">
@@ -472,7 +487,8 @@
                         <p class="text-muted">2020 International Symposium on Applied Reconfigurable
                             Computing
                             (ARC)</p>
-                        <p class="text-muted"><u>Martin Ferianc</u>, Hongxiang Fan, Ringo S. W. Chu, Jakub Stano, Wayne Luk</p>
+                        <p class="text-muted"><u>Martin Ferianc</u>, Hongxiang Fan, Ringo S. W. Chu, Jakub Stano, Wayne
+                            Luk</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item wow animated fadeIn" data-wow-delay="0.1s">
@@ -1173,6 +1189,71 @@
         </div>
     </div>
 
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Drug consumption prediction for NHS
+                                </h2>
+                                <p class="item-intro text-muted">Bayesian recurrent neural network, Data analysis,
+                                    Machine Learning, Python</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/100-full.jpg" alt="">
+                                <p>As life expectancy increases, it is crucial to improve the quality of life among the
+                                    elderly. As people age, they are
+                                    more prone to having health issues and degenerative diseases such as cancer,
+                                    dementia, infections due to viruses and
+                                    bacteria. Osteoporosis and arthritis affecting the bones and joints,
+                                    neurodegenerative diseases such as Alzheimer’s and
+                                    Parkinson's, cancer, and diabetes are among the most common degenerative disease.
+                                </p>
+                                <p>Our project is aimed at measuring correlations between different diseases in regions
+                                    in the UK. We built a dataset
+                                    consisting of time-series data consisting of the number of prescriptions per GP in
+                                    the UK and we attempt to predict
+                                    thwat is going to be the monthly consumption for specific medicine per GP.
+
+                                </p>
+                                <p>Our method is a multi-layered Recurrent neural network that is trained through
+                                    backpropagation. We are able to estimate
+                                    the uncertainty of our predictions on the procedure counts through Bayesian
+                                    inference that is provided through using MC
+                                    Dropout.</p>
+                                <p>We faced significant challenges with selecting suitable prescriptions to use for our
+                                    proof-of-concept RNN. In addition
+                                    we tested several approaches for imputing missing values to ensure we did not lose
+                                    too much of our data to NaN values
+                                    while also conserving data integrity for downstream model training.
+                                    Lastly when training the RNN we faced challenges with hyperparameter tuning and
+                                    model selection, going through several
+                                    iterations before settling on our final model.
+                                </p>
+                                <p>Overall we learned a lot about data cleaning and wrangling, and establishing it as a
+                                    working, reproducible pipeline.
+                                    This was also the first time any of us had trained an RNN before, and it has been a
+                                    very productive experience. Overall, we made it to the finals for the NHS category at the <a href="https://aihack.org/", target="_blank">2020 AIHack</a>! The code can be seen here: <a href="https://github.com/maxdgrogan/aihack2020" target="_blank">Link</a></p>
+                                <ul class="list-inline">
+                                    <li>Date: March-March 2020</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Publication Modals -->
 
     <!-- Modal 1 -->
@@ -1189,22 +1270,34 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 class="text-uppercase">Static Block Floating-Point Quantization for Convolutional Neural Networks on FPGA</h2>
-                                <p class="item-intro text-muted">2020 International Conference on Field-Programmable Technology (ICFPT)</p>
+                                <h2 class="text-uppercase">Static Block Floating-Point Quantization for Convolutional
+                                    Neural Networks on FPGA</h2>
+                                <p class="item-intro text-muted">2020 International Conference on Field-Programmable
+                                    Technology (ICFPT)</p>
                                 <p class="item-intro text-muted">H. Fan, G. Wang, <u>M. Ferianc</u>, X. Niu and W Luk
                                 </p>
                                 <img class="img-fluid d-block mx-auto" src="img/portfolio/12-full.png" alt="">
-                                <p>onvolutional neural networks (CNNs) have been widely applied in various computer vision and speech processing
-                                applications. However, the algorithmic complexity of CNNs hinders their deployment in embedded systems with limited
-                                memory and computational resources. This paper proposes static block floating-point (BFP) quantization, an effective
-                                approach involving Kullback-Leibler divergence, to determine the static shared exponents. Without need for retraining,
-                                the proposed approach is able to quantize CNNs to 8 bits with negligible accuracy loss. An FPGA-based hardware design
-                                with static BFP quantization is also proposed. Compared with 8-bit integer linear quantization, our experiments show
-                                that the hardware kernel based on static BFP quantization can achieve over 50% reduction in logic resources on an FPGA.
-                                Based on static BFP quantization, a tool implemented in the PyTorch framework is developed, which can automatically
-                                generate optimised configuration according to user requirements for given CNN models, where the entire optimization
-                                process takes only a few minutes on an Intel Xeon Silver 4110 CPU.</p>
-                                <a class="btn btn-secondary" href="https://ieeexplore.ieee.org/abstract/document/8977902" , target="_blank">
+                                <p>Convolutional neural networks (CNNs) have been widely applied in various computer
+                                    vision and speech processing
+                                    applications. However, the algorithmic complexity of CNNs hinders their deployment
+                                    in embedded systems with limited
+                                    memory and computational resources. This paper proposes static block floating-point
+                                    (BFP) quantization, an effective
+                                    approach involving Kullback-Leibler divergence, to determine the static shared
+                                    exponents. Without need for retraining,
+                                    the proposed approach is able to quantize CNNs to 8 bits with negligible accuracy
+                                    loss. An FPGA-based hardware design
+                                    with static BFP quantization is also proposed. Compared with 8-bit integer linear
+                                    quantization, our experiments show
+                                    that the hardware kernel based on static BFP quantization can achieve over 50%
+                                    reduction in logic resources on an FPGA.
+                                    Based on static BFP quantization, a tool implemented in the PyTorch framework is
+                                    developed, which can automatically
+                                    generate optimised configuration according to user requirements for given CNN
+                                    models, where the entire optimization
+                                    process takes only a few minutes on an Intel Xeon Silver 4110 CPU.</p>
+                                <a class="btn btn-secondary"
+                                    href="https://ieeexplore.ieee.org/abstract/document/8977902" , target="_blank">
                                     Link to Paper</a>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fa fa-times"></i>
@@ -1256,8 +1349,7 @@
                                     improvement in accuracy with respect to the mean absolute error in comparison to a
                                     standard analytic
                                     method in leave-one-out cross-validation.</p>
-                                <a class="btn btn-secondary"
-                                    href="https://arxiv.org/abs/2002.00190" , target="_blank">
+                                <a class="btn btn-secondary" href="https://arxiv.org/abs/2002.00190" , target="_blank">
                                     Link to Paper</a>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fa fa-times"></i>
