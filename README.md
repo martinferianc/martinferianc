@@ -1,7 +1,16 @@
-### Hi there 👋
+
+<h3 align="center">👋 Hi there! I'm Martin</h3>
+<p align="center">
+  <a href="https://martinferianc.github.io">Website</a> •
+  <a href="https://scholar.google.com/citations?user=itcRKZQAAAAJ&hl=en">Google Scholar</a>
+  <a href="https://www.linkedin.com/in/martinferianc/">LinkedIn</a>
+</p>
+
+---
+I am a penultimate-year PhD student passionate about machine learning and Bayesian neural networks at UCL with hands-on experience from industrial/academic placements in different countries. My main expertise has revolved around convolutional neural networks and their hardware acceleration applied to computer vision tasks. I am a practical researcher with an engineering background ready to apply my diverse skillset in industry.
 
 <!--
-**martinferianc/martinferianc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**lauragift21/lauragift21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
