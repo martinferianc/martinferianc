@@ -7,7 +7,7 @@
 </p>
 
 ---
-I am a final PhD student passionate about machine learning and Bayesian neural networks at UCL with hands-on experience from industrial/academic placements in different countries. My main expertise has revolved around convolutional neural networks and their hardware acceleration applied to computer vision tasks. I am a practical researcher with an engineering background ready to apply my diverse skillset in industry.
+Martin obtained an MEng in Electronic and Information Engineering from Imperial College London, London, UK in 2015. He is currently a PhD candidate in the Department of Electronic and Electrical Engineering at University College London. His research interests include Bayesian neural networks, deep learning and hardware acceleration of neural networks.
 
 <!--
 **lauragift21/lauragift21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
